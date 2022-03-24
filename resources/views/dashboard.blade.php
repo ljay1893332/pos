@@ -6,17 +6,9 @@
             <!-- Widgets -->
             @include('layouts.messages')
 
-<<<<<<< HEAD
                         <div class="body">
                             <img src="images/juantindahan.jpg" alt="" width="1100" height="700">
                             
-=======
-            <div class="row clearfix">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-pink hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">playlist_add_check</i>
->>>>>>> 040724b223240c7ee341cf81c28717a7b4dafd88
                         </div>
                         <div class="content">
                             <div class="text">NEW TASKS</div>
