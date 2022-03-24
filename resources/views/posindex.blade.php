@@ -69,7 +69,7 @@
                 <div class="modal-body">
                     <div class="row clearfix">
                         <div class="col-sm-12">
-                            <form action="{{url('pos/invoice')}}" method="post">
+                            <form action="{{route('sellInvoice.show')}}" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="amount_payable">Amount Payable</label>
@@ -78,15 +78,15 @@
                                     <input type="hidden" name="amount_payable" id="total_payable">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="paid_by">Paid By</label>
-                                <div class="form-line">
-                                    
-                                    <input type="text" class="form-control" placeholder="Paid by" id="paid_by" name="paid_by">
-                                </div>
+                                <select class="form-control show-tick" name="account_id">
+                                    @foreach($accounts as $account)
+                                        <option value="{{$account->id}}">{{$account->name}}</option>
+                                    @endforeach
+                                </select>
+
                             </div>
-                          
                             <div class="form-group">
                                 <label for="amount_paid">Amount Paid</label>
                                 <div class="form-line">
@@ -99,8 +99,14 @@
                                     <textarea class="form-control" placeholder="Note.." id="note" name="note"></textarea>
                                 </div>
                             </div>
-                                <button  class="btn btn-success" type="submit">Done</button>
-                            </form><br>
+                            <div class="form-group">
+                                <label for="customer">Customer <span><a href="{{route('customer.create')}}" target="_blank" class="btn btn-primary">Add New Customer</a></span></label>
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Customer Mobile No." id="customer_no" name="customer_no">
+                                </div>
+                            </div>
+                                <button class="btn btn-primary" type="submit">Show Invoice</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -179,7 +185,6 @@
                             <div class="m-b-10 m-r-10 p-t-10 clearfix" style="display: block;">
                                 <a href="javascript:void(0);" id="delallcart" class="btn btn-danger m-r-10">Suspend</a>
                                 <a href="javascript:void(0);" id="paymentbtn" class="btn btn-success">Payment</a>
-                                
                             </div>
                             @else
                                 <p>Select Items</p>
@@ -214,7 +219,7 @@
                                             <input type="hidden" id="itemName" value="{{$item->name}}">
                                             <h2>{{$item->name}}</h2>
                                             <img src="{{asset('/images/items/'.$item->image)}}" alt="">
-                                            <p class="price">Price: {{$item->retail_price}} Php (<span id="stock" class="quantity">{{$item->quantity}}</span>)</p>
+                                            <p class="price">Price: {{$item->retail_price}} BDT (<span id="stock" class="quantity">{{$item->quantity}}</span>)</p>
                                             <div class="row">
                                                 <div class="col-sm-12 margin-0" style="margin-bottom: 0px;">
                                                     <div class="left_text m-l-25">

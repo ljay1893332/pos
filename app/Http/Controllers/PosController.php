@@ -111,7 +111,7 @@ class PosController extends Controller
             $invoiceNo = 'Inv##'.(count(Invoice::all())+1);
         }
         $customer = Customer::where('phone', '=', $request->customer_no)->get();
-//       return $customer;
+//        return $customer;
         if(count($customer)>0){
             $customer_name = $customer->first()->name;
         }else{
@@ -122,7 +122,7 @@ class PosController extends Controller
         }else{
             $due = 0;
         }
-        $item = Item::with('categories')->where('id', '=', $id)->get()->first();
+
         Invoice::create([
             'invoice_no'    =>  $invoiceNo,
             'from'          =>  Auth::user()->name,
@@ -133,10 +133,7 @@ class PosController extends Controller
             'amount_due'    =>  $due,
             'status'        =>  $request->note,
         ]);
-        $cart = Cart::all();
-        $specitem = Item::all();
-        $inv = Invoice::where('invoice_no', '=', $invoiceNo)->get()->first();
-        return view('invoiceshow',['inv'=>$inv, 'cart'=>$cart, 'specitem'=>$specitem]);
-    } 
 
+        return redirect()->route('posindex');
+    }
 }

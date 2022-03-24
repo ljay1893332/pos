@@ -33,8 +33,4 @@ Route::post('/account/edit', 'AccountController@edit')->name('account.edit');
 Route::delete('/account/{account}', 'AccountController@destroy')->name('account.destroy');
 Route::post('/account/update', 'AccountController@update')->name('account.update');
 Route::get('/error', 'ErrorController@err404')->name('404error');
-Route::post('/pos/invoice', 'PosController@itemSellInvoiceShow');
-
-
-
-Route::get('invoiceshow/{id}', 'PosController@invoiceshow');
+Route::post('/pos/invoice', 'PosController@itemSellInvoiceShow')->name('sellInvoice.show');

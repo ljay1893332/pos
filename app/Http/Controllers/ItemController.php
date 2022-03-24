@@ -49,7 +49,7 @@ class ItemController extends Controller
             'item_code'  =>  'required',
             'purchase_price'    =>  'required',
             'retail_price'      =>  'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:500',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:128',
             'vat'  =>  '',
             'quantity'  =>  'required',
             'description'   =>  'required',
@@ -119,7 +119,7 @@ class ItemController extends Controller
             'item_code'  =>  'required',
             'purchase_price'    =>  'required',
             'retail_price'      =>  'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:500',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:128',
             'vat'  =>  '',
             'description'   =>  '',
             'quantity'      => '',
@@ -138,7 +138,6 @@ class ItemController extends Controller
                 $destinationPath = public_path('/images/items');
                 $image->move($destinationPath, $uploadedImage);
                 $validatedData['image'] = $uploadedImage;
-                $updatingRow->image = $uploadedImage;
             }
             $updatingRow->update();
             $updatingRow->categories()->sync($request->category);
