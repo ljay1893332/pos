@@ -25,9 +25,73 @@
     <!-- Menu -->
     <div class="menu">
         <ul class="list">
+<<<<<<< HEAD
             <li class="header">NAVIGATION</li>
             
           
+=======
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active">
+                <a href="{{route('home')}}">
+                    <i class="material-icons">home</i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">person</i>
+                    <span>Customers</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{route('customer.create')}}">
+                            <span>Add Customer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('customer.index')}}">
+                            <span>Manage Customers</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">person</i>
+                    <span>Suppliers</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{route('supplier.create')}}">
+                            <span>Add Supplier</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('supplier.index')}}">
+                            <span>Manage Suppliers</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">person</i>
+                    <span>Employees</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{route('employee.create')}}">
+                            <span>Add Employee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('employee.index')}}">
+                            <span>Manage Employee</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+>>>>>>> 040724b223240c7ee341cf81c28717a7b4dafd88
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">person</i>
@@ -57,7 +121,19 @@
                     <span>POS</span>
                 </a>
             </li>
-     
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">person</i>
+                    <span>Banking & Transactions</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{route('account.index')}}">
+                            <span>Accounts</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             {{--<li>--}}
                 {{--<a href="pages/helper-classes.html">--}}
                     {{--<i class="material-icons">layers</i>--}}
@@ -384,7 +460,7 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; 2022 <a href="https://mail.google.com/mail/u/0/?pli=1#search/brix.crisostomo%40g.batstate-u.edu.ph">Dalandan Store</a>.
+            &copy; 2020 <a href="mailto:rayhan.zaman333@gmail.com?Subject=Inventory%20Software">Rayhan Zaman</a>.
         </div>
         <div class="version">
             <b>All Rights </b> Reserved

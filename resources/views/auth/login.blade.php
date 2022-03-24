@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sign In | Dalandan Store</title>
+    <title>Sign In | INPoS</title>
     <!-- Favicon-->
     <link rel="icon" href="{{asset('inpos/favicon.ico')}}" type="image/x-icon">
 
@@ -28,8 +28,8 @@
 <body class="login-page">
 <div class="login-box">
     <div class="logo">
-        <a href="javascript:void(0);">Dalandan<b>Store</b></a>
-        <small>Dalandan Store</small>
+        <a href="javascript:void(0);">In<b>PoS</b></a>
+        <small>Inventory Management System with POS</small>
     </div>
     <div class="card">
         <div class="body">

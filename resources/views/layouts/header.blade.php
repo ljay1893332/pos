@@ -9,7 +9,11 @@ $user = \Illuminate\Support\Facades\Auth::user();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<<<<<<< HEAD
     <title>Tindahan ni Juan</title>
+=======
+    <title>INPoS | @yield('title')</title>
+>>>>>>> 040724b223240c7ee341cf81c28717a7b4dafd88
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -77,7 +81,11 @@ $user = \Illuminate\Support\Facades\Auth::user();
         <div class="navbar-header">
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
+<<<<<<< HEAD
             <a class="navbar-brand" href="" style="text-transform: uppercase">Tindahan ni Juan  </a>
+=======
+            <a class="navbar-brand" href="{{route('home')}}" style="text-transform: uppercase">INPOS - {{$user->business_name}} </a>
+>>>>>>> 040724b223240c7ee341cf81c28717a7b4dafd88
             <span class="m-l-60" style="" id="sidebarMenuSwitch">
                 <span class="glyphicon glyphicon-th-list rotated" aria-hidden="true"></span>
             </span>
@@ -103,7 +111,11 @@ $user = \Illuminate\Support\Facades\Auth::user();
                                             <i class="material-icons">person_add</i>
                                         </div>
                                         <div class="menu-info">
+<<<<<<< HEAD
                                             <h4>John Wick stopped by your store!</h4>
+=======
+                                            <h4>12 new members joined</h4>
+>>>>>>> 040724b223240c7ee341cf81c28717a7b4dafd88
                                             <p>
                                                 <i class="material-icons">access_time</i> 43 mins ago
                                             </p>

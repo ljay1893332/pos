@@ -25,7 +25,12 @@
 
 <!-- Flot Charts Plugin Js -->
 @if(\Illuminate\Support\Facades\Route::currentRouteName()=='home')
-
+<script src="{{asset('inpos/plugins/flot-charts/jquery.flot.js')}}"></script>
+<script src="{{asset('inpos/plugins/flot-charts/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('inpos/plugins/flot-charts/jquery.flot.pie.js')}}"></script>
+<script src="{{asset('inpos/plugins/flot-charts/jquery.flot.categories.js')}}"></script>
+<script src="{{asset('inpos/plugins/flot-charts/jquery.flot.time.js')}}"></script>
+<script src="{{asset('inpos/js/pages/index.js')}}"></script>
 @endif
 <!-- Sparkline Chart Plugin Js -->
 <script src="{{asset('inpos/plugins/jquery-sparkline/jquery.sparkline.js')}}"></script>

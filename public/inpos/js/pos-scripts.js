@@ -64,13 +64,6 @@ $(document).ready(function(){
         $('#smallModal').modal('show');
     });
 
-    $(document).on('click', '#showbtn', function(){
-        var amountToBePaid = $('#amountToBePaid').text();
-        $('#amount_payable').val(amountToBePaid);
-        $('#amount_paid').val(amountToBePaid);
-        $('#sModal').modal('show');
-    });
-
 
 });
 
