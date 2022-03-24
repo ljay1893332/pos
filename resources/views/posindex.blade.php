@@ -1,7 +1,7 @@
 @extends('layouts.pos')
 @section('title', 'POS')
 @section('head')
-    <link href="{{asset('/inpos/css/jquery-ui.minb.css')}}" rel="stylesheet">
+    <link href="{{asset('/inpos/css/jquery-ui.min.css')}}" rel="stylesheet">
     <link href="{{asset('/inpos/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
     <link href="{{asset('/inpos/plugins/jquery-spinner/css/bootstrap-spinner.css')}}" rel="stylesheet">
     <style>
