@@ -25,28 +25,28 @@
     <!-- Menu -->
     <div class="menu">
         <ul class="list">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">NAVIGATION</li>
             
           
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">person</i>
-                    <span>Items</span>
+                    <span>Products</span>
                 </a>
                 <ul class="ml-menu">
                     <li>
                         <a href="{{route('item.create')}}">
-                            <span>Add Items</span>
+                            <span>Create Products</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{route('item.index')}}">
-                            <span>Manage Items</span>
+                            <span>Inventory</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{route('category.index')}}">
-                            <span>Manage Category</span>
+                            <span>Categories</span>
                         </a>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
             <li class="">
                 <a href="{{route('posindex')}}">
                     <i class="material-icons">home</i>
-                    <span>POS (Sales Register)</span>
+                    <span>POS</span>
                 </a>
             </li>
      
