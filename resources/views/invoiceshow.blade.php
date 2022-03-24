@@ -11,10 +11,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DalandanStore</title>
+    <title>Tindahan ni Juan</title>
     <style>
         body{
-            background-color: #F6F6F6; 
+            background-color: #dfdfdf; 
             margin: 0;
             padding: 0;
         }
@@ -32,7 +32,7 @@
             margin-left: auto;
         }
         .brand-section{
-           background-color: #0d1033;
+           background-color: #77a359;
            padding: 10px 40px;
         }
         .logo{
@@ -48,7 +48,7 @@
             flex: 0 0 auto;
         }
         .text-white{
-            color: #fff;
+            color: rgb(0, 0, 0);
         }
         .company-details{
             float: right;
@@ -67,7 +67,7 @@
             margin-bottom: 05px;
         }
         table{
-            background-color: #fff;
+            background-color: rgb(250, 117, 65);
             width: 100%;
             border-collapse: collapse;
         }
@@ -105,13 +105,12 @@
         <div class="brand-section">
             <div class="row">
                 <div class="col-6">
-                    <h1 class="text-white">DALANDAN Store</h1>
+                    <h1 class="text-white">Tindahan ni Juan</h1>
                 </div>
                 <div class="col-6">
                     <div class="company-details">
-                        <p class="text-white">Nasugbu</p>
-                        <p class="text-white">Batangas</p>
-                        <p class="text-white">09876543218</p>
+                        <p class="text-white">Sa Malayong Lugar</p>
+                        <p class="text-white">Pilipinas</p>
                     </div>
                 </div>
             </div>
@@ -121,9 +120,9 @@
             <div class="row">
                 <div class="col-6">
                     <h2 class="heading">Invoice No.: {{$inv->invoice_no}}</h2>
-                    <p class="sub-heading">Tracking No. dalandanstore2022 </p>
+                    <p class="sub-heading">Tracking No. Tindahan ni Juan </p>
                     <p class="sub-heading">Order Date: {{$inv->created_at}} </p>
-                    <p class="sub-heading">Email Address: dalandanstore@gmail.com </p>
+                    <p class="sub-heading">Email Address: juan@mail.com </p>
                 </div>
                 <div class="col-6">
                     <p class="sub-heading float-right">Cashier:  {{$inv->from}}</p>
@@ -183,7 +182,7 @@
         </div>
 
         <div class="body-section">
-            <p>&copy; Copyright 2022 - Dalandan Store. All rights reserved. 
+            <p>&copy; Cyberpunk 2077 - Tindahan ni Juan. All rights reserved. 
               
             </p>
         </div>      
